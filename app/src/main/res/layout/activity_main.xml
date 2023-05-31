@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:hint="@string/editText_main"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnSendExplicit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSendExplicit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="23dp"
+        android:text="@string/send_explicit"
+        app:layout_constraintBottom_toTopOf="@+id/btnSendImplicit"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/btnSendImplicit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="@string/send_implicit"
+        app:layout_constraintBottom_toTopOf="@+id/btnSendImplicitEmail"
+        app:layout_constraintStart_toStartOf="@+id/btnSendExplicit"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendExplicit" />
+
+    <Button
+        android:id="@+id/btnSendImplicitEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="390dp"
+        android:text="Send email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnSendImplicit"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendImplicit">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
